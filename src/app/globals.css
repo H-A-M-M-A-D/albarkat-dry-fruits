@@ -1,26 +1,91 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Base palette */
+  --color-ivory: #f5f0e7;
+  --color-card: #fcfaf6;
+  --color-cacao: #3b2118;
+  --color-forest: #1d2924;
+  --color-olive: #667154;
+  --color-gold: #b88746;
+  --color-ink: #181512;
+  --color-muted: #665a4c;
+
+  --background: var(--color-ivory);
+  --foreground: var(--color-cacao);
 }
 
 @theme inline {
+  --color-ivory: var(--color-ivory);
+  --color-card: var(--color-card);
+  --color-cacao: var(--color-cacao);
+  --color-forest: var(--color-forest);
+  --color-olive: var(--color-olive);
+  --color-gold: var(--color-gold);
+  --color-ink: var(--color-ink);
+  --color-muted: var(--color-muted);
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-serif: var(--font-instrument-serif), ui-serif, Georgia, serif;
+  --font-sans: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+}
+
+/* Native horizontal-scroll rows (categories on mobile) keep touch scrolling
+   and scroll-snap but hide the scrollbar chrome — no carousel library. */
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Fades the right edge of a horizontal-scroll row so the next (partially
+   visible) tile visibly trails off — a native-CSS "more content" cue. */
+.edge-fade-x {
+  mask-image: linear-gradient(to right, black calc(100% - 2.5rem), transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, black calc(100% - 2.5rem), transparent 100%);
+}
+
+/* Seamless infinite marquee: two identical tracks sit side by side inside a
+   `w-max` flex row, and translating that row by exactly -50% slides the
+   second (identical) track into the first one's start position — the loop
+   reset is invisible because both halves are pixel-identical. */
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee-scroll 42s linear infinite;
+}
+
+@media (max-width: 640px) {
+  .animate-marquee {
+    animation-duration: 26s;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
