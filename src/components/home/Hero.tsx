@@ -21,13 +21,15 @@ export function Hero() {
   // effect for reduced-motion users instead of only being read too late.
   return (
     <section className="relative overflow-hidden bg-ivory">
-      {/* lg:items-start (not items-center) + no lg:min-h-[86vh]: the text
-          column is much shorter than HeroVisual's ~680px square, so
-          centering it against that height (inside an artificial 86vh-tall
-          row) left a large dead gap above the headline. Row height is now
-          content-driven — still full and premium (the square image alone is
-          ~680px) without the extra forced stretch. */}
-      <Container className="relative grid grid-cols-1 items-center gap-8 py-12 sm:py-14 md:gap-6 md:py-10 lg:grid-cols-[1fr_1.15fr] lg:items-start lg:gap-8 lg:py-20">
+      {/* lg:items-center + no lg:min-h-[86vh]: the old 86vh floor made the
+          row far taller than HeroVisual's own footprint, so centering
+          against it left a big dead gap above the headline. HeroVisual is
+          now capped at 600px (not 680) and the row's own padding is
+          trimmed, so the row height stays close to the visual's natural
+          size — centering the shorter text column against it only adds a
+          modest, even gap on each side instead of the old viewport-based
+          stretch. */}
+      <Container className="relative grid grid-cols-1 items-center gap-8 py-12 sm:py-14 md:gap-6 md:py-10 lg:grid-cols-[1fr_1.25fr] lg:items-center lg:gap-10 lg:pt-8 lg:pb-12">
         <div className="mx-auto max-w-xl text-center lg:mx-0 lg:text-left">
           <motion.p
             key={reduced ? "eyebrow-reduced" : "eyebrow-motion"}

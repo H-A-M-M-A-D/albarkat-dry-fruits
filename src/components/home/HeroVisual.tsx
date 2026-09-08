@@ -145,13 +145,13 @@ export function HeroVisual() {
     <div
       onPointerMove={handlePointerMove}
       onPointerLeave={handlePointerLeave}
-      className="relative mx-auto aspect-square w-full max-w-[320px] sm:max-w-[440px] lg:max-w-[680px]"
+      className="relative mx-auto aspect-square w-full max-w-[320px] sm:max-w-[440px] lg:max-w-[600px]"
     >
       <FloatingItem
         src="/hero/dominant.webp"
         sizes="(min-width: 1024px) 530px, (min-width: 640px) 345px, 255px"
         ratio="aspect-[3/2]"
-        position="bottom-[6%] right-[-2%] w-[84%]"
+        position="bottom-[6%] right-[3%] w-[80%]"
         rotate={-2}
         delay={0.5}
         float={false}
@@ -200,7 +200,7 @@ export function HeroVisual() {
         src="/hero/accent-cashew.webp"
         sizes="(min-width: 1024px) 100px, (min-width: 640px) 65px, 48px"
         ratio="aspect-[3/2]"
-        position="left-[32%] bottom-[-4%] w-[15%]"
+        position="left-[32%] bottom-[3%] w-[15%]"
         rotate={-11}
         delay={0.95}
         duration={6}
