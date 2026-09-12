@@ -29,7 +29,7 @@ function FaqRow({ item }: { item: FaqItem }) {
           onClick={() => setOpen((value) => !value)}
           className="flex w-full items-center justify-between gap-4 rounded-sm text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-ivory"
         >
-          <span className="font-serif text-lg text-cacao sm:text-xl">{item.question}</span>
+          <span className="font-display font-medium text-lg text-cacao sm:text-xl">{item.question}</span>
           <ChevronDown
             className={`h-5 w-5 shrink-0 text-cacao/50 transition-transform duration-200 ${open ? "rotate-180" : ""}`}
             strokeWidth={1.5}

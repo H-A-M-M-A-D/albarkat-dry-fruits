@@ -75,7 +75,7 @@ export function Header() {
         }`}
       >
         <Container className="flex h-20 items-center justify-between gap-4">
-          <Link href="/" className={`font-serif text-3xl tracking-tight text-cacao ${navLinkFocus}`}>
+          <Link href="/" className={`font-display font-medium text-3xl tracking-tight text-cacao ${navLinkFocus}`}>
             {siteConfig.name}
           </Link>
 

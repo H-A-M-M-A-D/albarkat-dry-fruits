@@ -55,7 +55,7 @@ export default async function ProductPage({ params }: PageProps<"/product/[slug]
             <p className="text-xs font-medium uppercase tracking-[0.18em] text-muted">{product.category}</p>
           )}
 
-          <h1 className="mt-3 font-serif text-4xl leading-tight tracking-tight sm:text-5xl">{product.name}</h1>
+          <h1 className="mt-3 font-display font-medium text-4xl leading-tight tracking-tight sm:text-5xl">{product.name}</h1>
           <p className="mt-4 max-w-md text-base leading-relaxed text-muted">{product.description}</p>
 
           <div className="mt-6 border-t border-cacao/10 pt-6">
@@ -67,7 +67,7 @@ export default async function ProductPage({ params }: PageProps<"/product/[slug]
 
       {related.length > 0 && (
         <div className="mt-20 border-t border-cacao/10 pt-16 sm:mt-24 sm:pt-20">
-          <h2 className="font-serif text-3xl leading-tight tracking-tight sm:text-4xl">You may also like</h2>
+          <h2 className="font-display font-medium text-3xl leading-tight tracking-tight sm:text-4xl">You may also like</h2>
           <div className="mt-8 sm:mt-10">
             <ProductGrid products={related} />
           </div>

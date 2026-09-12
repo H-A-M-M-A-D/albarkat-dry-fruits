@@ -25,7 +25,7 @@ function PurposeTile({ purpose, dominant = false }: { purpose: Purpose; dominant
         />
       </div>
       <h3
-        className={`mt-4 font-serif tracking-tight text-cacao ${
+        className={`mt-4 font-display font-medium tracking-tight text-cacao ${
           dominant ? "text-3xl sm:text-4xl" : "text-xl"
         }`}
       >
@@ -53,7 +53,7 @@ export function ShopByPurpose() {
     <Section tone="card">
       <div className="max-w-xl">
         <p className="text-xs font-medium uppercase tracking-[0.18em] text-muted">Shop by Purpose</p>
-        <h2 className="mt-3 font-serif text-4xl leading-tight tracking-tight sm:text-5xl">
+        <h2 className="mt-3 font-display font-medium text-4xl leading-tight tracking-tight sm:text-5xl">
           Find what suits the moment
         </h2>
         <p className="mt-3 text-base text-muted">From everyday snacking to thoughtful gifting.</p>

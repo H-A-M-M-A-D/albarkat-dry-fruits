@@ -28,7 +28,7 @@ export function ShopPageContent({ targetSlug }: { targetSlug?: string }) {
         <p className="text-xs font-medium uppercase tracking-[0.18em] text-muted">
           Shop <span className="normal-case">{siteConfig.name}</span>
         </p>
-        <h1 className="mt-3 font-serif text-4xl leading-tight tracking-tight sm:text-5xl">
+        <h1 className="mt-3 font-display font-medium text-4xl leading-tight tracking-tight sm:text-5xl">
           {target ? target.name : "A considered collection."}
         </h1>
         <p className="mt-3 text-base text-muted">

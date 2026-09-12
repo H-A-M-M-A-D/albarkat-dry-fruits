@@ -69,7 +69,7 @@ export function CheckoutForm({ onValidSubmit }: { onValidSubmit: (values: Checko
   return (
     <form onSubmit={handleSubmit} noValidate className="space-y-9">
       <section>
-        <h2 className="font-serif text-2xl text-cacao">Customer Details</h2>
+        <h2 className="font-display font-medium text-2xl text-cacao">Customer Details</h2>
         <div className="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-2">
           <FormField label="Full Name" htmlFor="fullName" required error={errors.fullName} className="sm:col-span-2">
             <input
@@ -120,7 +120,7 @@ export function CheckoutForm({ onValidSubmit }: { onValidSubmit: (values: Checko
       </section>
 
       <section className="border-t border-cacao/10 pt-9">
-        <h2 className="font-serif text-2xl text-cacao">Delivery Address</h2>
+        <h2 className="font-display font-medium text-2xl text-cacao">Delivery Address</h2>
         <div className="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-2">
           <FormField
             label="Address Line 1"
@@ -207,7 +207,7 @@ export function CheckoutForm({ onValidSubmit }: { onValidSubmit: (values: Checko
       </section>
 
       <section className="border-t border-cacao/10 pt-9">
-        <h2 className="font-serif text-2xl text-cacao">Payment Method</h2>
+        <h2 className="font-display font-medium text-2xl text-cacao">Payment Method</h2>
         <div className="mt-5 rounded-xl border border-cacao/15 bg-card px-4 py-3.5">
           <p className="font-medium text-cacao">Cash on Delivery</p>
           <p className="mt-1 text-sm text-muted">Pay when your order arrives.</p>

@@ -23,7 +23,7 @@ export function DatesSpotlight() {
 
         <Reveal delay={0.08} className="lg:order-1 lg:w-5/12">
           <Badge tone="olive">Dates</Badge>
-          <h2 className="mt-4 font-serif text-4xl leading-tight tracking-tight sm:text-5xl">
+          <h2 className="mt-4 font-display font-medium text-4xl leading-tight tracking-tight sm:text-5xl">
             A closer look at dates
           </h2>
           <p className="mt-4 max-w-md text-base leading-relaxed text-muted">

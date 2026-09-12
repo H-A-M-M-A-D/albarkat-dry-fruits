@@ -36,7 +36,7 @@ export default function ReturnsRefundsPage() {
       <div className="mt-10 max-w-2xl space-y-8 sm:mt-12">
         {SECTIONS.map((section) => (
           <div key={section.heading}>
-            <h2 className="font-serif text-xl tracking-tight text-cacao">{section.heading}</h2>
+            <h2 className="font-display font-medium text-xl tracking-tight text-cacao">{section.heading}</h2>
             <p className="mt-2 text-sm leading-relaxed text-muted">{section.body}</p>
           </div>
         ))}

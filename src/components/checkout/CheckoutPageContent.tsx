@@ -30,7 +30,7 @@ export function CheckoutPageContent() {
       <Container className="flex flex-col items-center gap-5 py-24 text-center sm:py-32">
         <ShoppingBag className="h-10 w-10 text-cacao/25" strokeWidth={1} aria-hidden />
         <div>
-          <h1 className="font-serif text-4xl leading-tight tracking-tight sm:text-5xl">Your cart is empty.</h1>
+          <h1 className="font-display font-medium text-4xl leading-tight tracking-tight sm:text-5xl">Your cart is empty.</h1>
           <p className="mt-3 max-w-md text-base text-muted">Add something to your cart before checking out.</p>
         </div>
         <Button href="/shop" size="lg">
@@ -51,7 +51,7 @@ export function CheckoutPageContent() {
     <Container className="py-12 sm:py-16 lg:py-20">
       <div className="max-w-xl">
         <p className="text-xs font-medium uppercase tracking-[0.18em] text-muted">Checkout</p>
-        <h1 className="mt-3 font-serif text-4xl leading-tight tracking-tight sm:text-5xl">Complete your order.</h1>
+        <h1 className="mt-3 font-display font-medium text-4xl leading-tight tracking-tight sm:text-5xl">Complete your order.</h1>
         <p className="mt-3 text-base text-muted">
           Enter your delivery details and review your order before placing it.
         </p>

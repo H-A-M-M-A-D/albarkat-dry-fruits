@@ -19,7 +19,7 @@ export function EditorialStory() {
         </ClipReveal>
 
         <Reveal className="mt-10 lg:col-span-4 lg:col-start-9 lg:mt-0">
-          <h2 className="font-serif text-4xl leading-tight tracking-tight text-ivory sm:text-5xl">
+          <h2 className="font-display font-medium text-4xl leading-tight tracking-tight text-ivory sm:text-5xl">
             Good food starts with thoughtful selection.
           </h2>
           <p className="mt-5 max-w-md text-base leading-relaxed text-ivory/70">

@@ -14,7 +14,7 @@ export function BestSellers() {
         <div className="max-w-lg">
           {/* "Best Sellers" internally (file/data-model name) — the visible
               heading stays safe until real bestseller data is confirmed. */}
-          <h2 className="font-serif text-4xl leading-tight tracking-tight sm:text-5xl">
+          <h2 className="font-display font-medium text-4xl leading-tight tracking-tight sm:text-5xl">
             Featured Selection
           </h2>
           <p className="mt-3 text-base text-muted">A closer look at a few of our favourites.</p>

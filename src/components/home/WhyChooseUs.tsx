@@ -9,7 +9,7 @@ export function WhyChooseUs() {
   return (
     <Section tone="card" padding="compact">
       <div className="flex flex-col gap-8 lg:flex-row lg:items-start lg:justify-between lg:gap-16">
-        <h2 className="font-serif text-3xl leading-tight tracking-tight sm:text-4xl lg:max-w-xs">
+        <h2 className="font-display font-medium text-3xl leading-tight tracking-tight sm:text-4xl lg:max-w-xs">
           Why shop with us
         </h2>
 

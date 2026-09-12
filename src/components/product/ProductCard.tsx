@@ -86,7 +86,7 @@ export function ProductCard({ product, preload = false }: ProductCardProps) {
           href={productHref}
           className="mt-1 w-fit rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-ivory"
         >
-          <p className="font-serif text-xl leading-snug tracking-tight text-cacao transition-colors group-hover:text-cacao/80">
+          <p className="font-display font-medium text-xl leading-snug tracking-tight text-cacao transition-colors group-hover:text-cacao/80">
             {product.shortName ?? product.name}
           </p>
         </Link>

@@ -71,7 +71,7 @@ function SearchPanel({ onClose }: { onClose: () => void }) {
                       <ProductImage src={product.image} alt={product.imageAlt} sizes="56px" />
                     </div>
                     <div className="min-w-0 flex-1">
-                      <p className="truncate font-serif text-base text-cacao">
+                      <p className="truncate font-display text-base text-cacao">
                         {product.shortName ?? product.name}
                       </p>
                       <p className="text-xs text-muted">{product.category}</p>

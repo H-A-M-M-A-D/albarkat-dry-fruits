@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Instrument_Serif, Manrope } from "next/font/google";
+import { Manrope, Outfit } from "next/font/google";
 import "./globals.css";
 import { CartDrawer } from "@/components/cart/CartDrawer";
 import { Footer } from "@/components/layout/Footer";
@@ -10,11 +10,9 @@ import { SearchProvider } from "@/lib/search-context";
 import { siteConfig } from "@/lib/site-config";
 import { WishlistProvider } from "@/lib/wishlist-context";
 
-const instrumentSerif = Instrument_Serif({
-  variable: "--font-instrument-serif",
+const outfit = Outfit({
+  variable: "--font-outfit",
   subsets: ["latin"],
-  weight: "400",
-  style: ["normal", "italic"],
 });
 
 const manrope = Manrope({
@@ -31,7 +29,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${instrumentSerif.variable} ${manrope.variable} h-full antialiased`}
+      className={`${outfit.variable} ${manrope.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-ivory text-cacao">
         <CartProvider>

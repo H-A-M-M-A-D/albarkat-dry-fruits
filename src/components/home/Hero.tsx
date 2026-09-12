@@ -41,7 +41,7 @@ export function Hero() {
             {heroContent.eyebrow}
           </motion.p>
 
-          <h1 className="mt-5 font-serif text-5xl leading-[1.08] tracking-tight sm:text-6xl lg:text-7xl">
+          <h1 className="mt-5 font-display font-semibold text-4xl leading-[1.08] tracking-tight sm:text-6xl lg:text-7xl">
             {heroContent.headline.map((line, index) => (
               <span key={line} className="block overflow-hidden">
                 <motion.span

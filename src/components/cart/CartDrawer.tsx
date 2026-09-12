@@ -46,7 +46,7 @@ export function CartDrawer() {
             aria-label="Shopping cart"
           >
             <div className="flex items-center justify-between border-b border-cacao/10 px-6 py-5">
-              <h2 className="font-serif text-2xl tracking-tight text-cacao">Your Cart</h2>
+              <h2 className="font-display font-medium text-2xl tracking-tight text-cacao">Your Cart</h2>
               <IconButton aria-label="Close cart" onClick={closeCart} autoFocus>
                 <X className="h-5 w-5" strokeWidth={1.5} />
               </IconButton>
@@ -56,7 +56,7 @@ export function CartDrawer() {
               <div className="flex flex-1 flex-col items-center justify-center gap-5 px-8 text-center">
                 <ShoppingBag className="h-10 w-10 text-cacao/20" strokeWidth={1} aria-hidden />
                 <div>
-                  <p className="font-serif text-xl text-cacao">Your cart is empty.</p>
+                  <p className="font-display text-xl text-cacao">Your cart is empty.</p>
                   <p className="mt-2 text-sm text-muted">
                     Browse the collection to find something for the table, pantry, or gifting.
                   </p>
@@ -83,7 +83,7 @@ export function CartDrawer() {
                             <Link
                               href={`/product/${line.slug}`}
                               onClick={closeCart}
-                              className="rounded-sm font-serif text-base leading-snug text-cacao hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-ivory"
+                              className="rounded-sm font-display text-base leading-snug text-cacao hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-ivory"
                             >
                               {line.name}
                             </Link>

@@ -42,7 +42,7 @@ export default function OurStoryPage() {
 
           <div className="mt-10 lg:col-span-4 lg:col-start-9 lg:mt-0">
             <p className="text-xs font-medium uppercase tracking-[0.18em] text-ivory/60">Our Story</p>
-            <h1 className="mt-3 font-serif text-4xl leading-tight tracking-tight text-ivory sm:text-5xl">
+            <h1 className="mt-3 font-display font-medium text-4xl leading-tight tracking-tight text-ivory sm:text-5xl">
               A closer look at what we do.
             </h1>
             <p className="mt-5 max-w-md text-base leading-relaxed text-ivory/70">
@@ -57,7 +57,7 @@ export default function OurStoryPage() {
         <div className="mx-auto grid max-w-3xl gap-10 sm:grid-cols-3 sm:gap-8">
           {SECTIONS.map((section) => (
             <div key={section.heading}>
-              <h2 className="font-serif text-xl tracking-tight text-cacao">{section.heading}</h2>
+              <h2 className="font-display font-medium text-xl tracking-tight text-cacao">{section.heading}</h2>
               <p className="mt-3 text-sm leading-relaxed text-muted">{section.body}</p>
             </div>
           ))}

@@ -43,7 +43,7 @@ export function Footer() {
     <footer className="bg-forest text-ivory">
       <Container className="grid grid-cols-1 gap-12 py-16 sm:py-20 lg:grid-cols-[1.4fr_1fr_1fr_1fr] lg:gap-8">
         <div className="max-w-sm">
-          <p className="font-serif text-3xl tracking-tight">{siteConfig.name}</p>
+          <p className="font-display font-medium text-3xl tracking-tight">{siteConfig.name}</p>
           <p className="mt-4 text-sm leading-relaxed text-ivory/70">
             {siteConfig.tagline}.
           </p>

@@ -62,7 +62,7 @@ export function ContactForm() {
       <div className="flex flex-col items-start gap-3 rounded-2xl border border-olive/25 bg-olive/10 px-6 py-8">
         <CheckCircle2 className="h-8 w-8 text-olive" strokeWidth={1.5} aria-hidden />
         <div>
-          <p className="font-serif text-xl text-cacao">Your message has been prepared for this demo.</p>
+          <p className="font-display text-xl text-cacao">Your message has been prepared for this demo.</p>
           <p className="mt-2 max-w-md text-sm text-muted">
             No message was actually sent. This form is running in demo mode while a real inquiry system is
             being connected.

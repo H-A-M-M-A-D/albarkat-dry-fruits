@@ -32,7 +32,7 @@ export function OrderSummary({
 }) {
   return (
     <div className="rounded-2xl border border-cacao/10 bg-card p-6">
-      <h2 className="font-serif text-2xl text-cacao">Order Summary</h2>
+      <h2 className="font-display font-medium text-2xl text-cacao">Order Summary</h2>
 
       <ul className="mt-5 space-y-4">
         {items.map((line) => (
@@ -42,7 +42,7 @@ export function OrderSummary({
             </div>
             <div className="flex min-w-0 flex-1 items-start justify-between gap-2">
               <div className="min-w-0">
-                <p className="truncate font-serif text-base text-cacao">{line.name}</p>
+                <p className="truncate font-display text-base text-cacao">{line.name}</p>
                 <p className="mt-0.5 text-xs text-muted">
                   {[line.variantLabel, `Qty ${line.quantity}`].filter(Boolean).join(" · ")}
                 </p>

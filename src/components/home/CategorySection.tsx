@@ -41,7 +41,7 @@ export function CategorySection() {
     <Section id="shop" tone="card" padding="compact">
       <div className="max-w-xl">
         <p className="text-xs font-medium uppercase tracking-[0.18em] text-muted">Shop by Category</p>
-        <h2 className="mt-3 font-serif text-4xl leading-tight tracking-tight sm:text-5xl">
+        <h2 className="mt-3 font-display font-medium text-4xl leading-tight tracking-tight sm:text-5xl">
           Find your favourite
         </h2>
       </div>

@@ -10,7 +10,7 @@ export function ProductGrid({ products }: { products: Product[] }) {
       <div className="flex flex-col items-center gap-4 rounded-2xl border border-dashed border-cacao/15 py-20 text-center">
         <PackageSearch className="h-10 w-10 text-cacao/25" strokeWidth={1} aria-hidden />
         <div>
-          <p className="font-serif text-xl text-cacao">Nothing here yet.</p>
+          <p className="font-display text-xl text-cacao">Nothing here yet.</p>
           <p className="mt-2 max-w-sm text-sm text-muted">
             This category doesn&apos;t have any products right now. Check back soon, or browse the full
             collection.

@@ -9,7 +9,7 @@ export function FaqPreview() {
     <Section tone="card" padding="compact">
       <div className="flex flex-col items-start gap-6 sm:flex-row sm:items-end sm:justify-between">
         <div className="max-w-lg">
-          <h2 className="font-serif text-3xl leading-tight tracking-tight sm:text-4xl">A few common questions</h2>
+          <h2 className="font-display font-medium text-3xl leading-tight tracking-tight sm:text-4xl">A few common questions</h2>
         </div>
         <Link
           href="/faq"
